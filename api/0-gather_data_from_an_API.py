@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""For a given user ID, returns information about
+"""For the given user ID, return information about
 their TODO list progress"""
 
 import requests
