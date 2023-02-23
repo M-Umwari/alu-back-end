@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""For a given employee ID, returns information about
+"""For a given user ID, returns information about
 their TODO list progress"""
 
 import requests
@@ -8,10 +8,10 @@ import sys
 if __name__ == "__main__":
 
     userId = sys.argv[1]
-    employee = requests.get("https://jsonplaceholder.typicode.com/users/{}"
+    user = requests.get("https://jsonplaceholder.typicode.com/users/{}"
                         .format(userId))
 
-    name = employee.json().get('name')
+    name = user.json().get('name')
 
     todos = requests.get('https://jsonplaceholder.typicode.com/todos')
     totalTasks = 0
